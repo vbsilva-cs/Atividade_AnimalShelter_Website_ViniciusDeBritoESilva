@@ -35,12 +35,14 @@ body {
     color: gold;
 }
 
+/* menu de navegação */
 .menu {
     display: flex;
     gap: 10px;
     justify-content: center;
 }
 
+/* item do menu */
 .menu > a {
     background-color: #669a9f;    
     font-size: 20px;
@@ -53,7 +55,7 @@ body {
     border-top-right-radius: 8px;
 }
 
-
+/* destaque da aba referente à página atual */
 #current_tab {
     background-color: #6ac;
     font-size: 20px;
@@ -74,6 +76,7 @@ body {
     align-items: center;
 }
 
+/* Espaçamento de sub-títulos e conteúdo anterior*/
 h3, h2 {
     margin-top: 10px;
 }
@@ -136,37 +139,29 @@ h3, h2 {
 .cartão_flex {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
     justify-content: center;
 }
 
 /* Cartões */
 .cartão {
     background-color: #bde3f9;
-    width: 33%;
+    width: 25%;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: space-between;
     gap: 10px;
-    padding: 40px 0 25px 40px;
+    padding: 1.5% 2% 1.5% 3%;
     margin-bottom: 30px;
     border-radius: 15px;
     color: black;
 }
 
-.cartão > h3 {
-    margin-bottom: 20px;
-}
-
-.cartão > p {
-    margin-right: 35px;
-}
-
-/* Botão de exibir detalhes */
+/* Botão dentro do cartão */
 .view_details {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    align-self: center;
 }
 
 .view_details > a {
@@ -175,7 +170,8 @@ h3, h2 {
     padding: 20px;
     font-family: 'Times New Roman';
     color: black;
-    text-decoration: none;    
+    text-decoration: none; 
+    margin-top: 5%; 
 }
 
 /* centralizar notícias */
@@ -184,7 +180,7 @@ h3, h2 {
     justify-content: center;
 } 
 
-/* Alinhamento de ícones com textos*/
+/* Colocar ícones e nomes lado-a-lado */
 .icon-text {
     display: flex;
     flex-direction: row;
