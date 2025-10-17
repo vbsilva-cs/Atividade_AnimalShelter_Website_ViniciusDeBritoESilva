@@ -21,6 +21,20 @@ body {
     gap: 40px;
 }
 
+.header > section {
+    display: flex;
+    flex-direction: column;
+}
+
+#header-logo {
+    display: flex;
+    flex-flow: column nowrap;
+    width: fit-content;
+    align-self: center;
+    text-decoration: none;
+    color: gold;
+}
+
   .menu {
     display: flex;
     gap: 10px;
