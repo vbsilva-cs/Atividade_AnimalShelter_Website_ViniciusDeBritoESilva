@@ -80,6 +80,7 @@ body {
     border-radius: 22px;
     display: flex;
     flex-flow: column wrap;
+    width: 90%;
     padding: 25px;
     gap: 10px;
     align-items: center;
