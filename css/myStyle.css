@@ -187,6 +187,7 @@ body {
     flex-wrap: nowrap;
     align-items: center;
     gap: 15px;
+    margin: 10px;
     font-size: 16pt;
     color: black;
 }
