@@ -64,7 +64,7 @@ body {
 }
 
 /* Bloco principal */
-.main-container {
+.main-container{
     background-color: #6ac;
     padding: 25px;
     color: black;
@@ -72,6 +72,10 @@ body {
     flex-flow: column wrap;
     gap: 10px;
     align-items: center;
+}
+
+h3, h2 {
+    margin-top: 10px;
 }
 
 /* Sessões */

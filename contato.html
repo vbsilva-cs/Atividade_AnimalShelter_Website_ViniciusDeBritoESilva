@@ -2,19 +2,19 @@
 
 <html>
 	<head>
-		<title>Sobre - Animal Shelter</title>
+		<title>Contato - Animal Shelter</title>
 		<meta charset="UTF-8">
 		<meta name="description" content="Abrigo e proteção de animais domésticos">
 		<meta name="viewport" content="width= device-width, initial-scale-1.0">
 		<link rel="stylesheet" href="./css/myStyle.css">
 	</head>
+    <body>
         <header class="header">
-            <section>
+
                 <a id="header-logo" href="index.html">
                     <h1>Animal Shelter</h1>
                     <caption>Abrigo e proteção</caption>
                 </a>
-            </section>
             <nav class="menu"> 
                 <a href="index.html">Inicio</a>			
                 <a href="projetos.html">Projetos</a>
@@ -24,33 +24,44 @@
                 <a id="current_tab" href="contato.html">Contato</a>
             </nav>
         </header>
-		<h1>Atendimento</h1>
-		<section class="column">
-            <img src="Recursos/logo_whatsapp.jpg" width="60" height="60">
-			<p>(99) 9 3210-1234</p>
-			<img src="Recursos/symbol_telephone.jpg" width="60" height="60">
-			<p>(99)  3210-1234</p>
-			<p style=" grid-column: 1 / 2 span;">E-mail: atendimento@animal.shelter.com</p>
-		</section>
-		<h1>Localização</h1>
-		<section class="center">
-            <iframe src="Recursos/mapa_localizacao.jpg" title="Mapa do Endereço" width="800" height="450"></iframe>
-		</section>		
-		<h1>Social</h1>
-		<section class="column">
-            <img src="Recursos/logo_instagram.jpg" width="60" height="60">
-            <a href="contato.html">Instagram</a>
-            <img src="Recursos/logo_facebook.jpg" width="60" height="60">
-            <a href="contato.html">Facebook</a>
-		</section>
-		<section>
-			<h1>Sugestões e críticas</h1>
-			<form>
-				<legend>Envie uma mensagem com sua opinião para nós!</legend><br>
-				<textarea class="center" name="mensagem" rows="20" cols="150">Escreva aqui.</textarea>
-			</form>
-		</section>
-
+        <main class="main-container">
+            <section class="main-element">
+                <article class="main-sub-element">
+                    <h2>Contato</h2>
+                    <article class="icon-text">
+                        <img src="Recursos/logo_whatsapp.png" width="60" height="60">
+                        <p>(99) 93210-1234</p>
+                    </article>
+                    <article class="icon-text">
+                        <img src="Recursos/symbol_telephone.png" width="60" height="60">
+                        <p>(99) 3210-1234</p>
+                    </article>
+                </article>
+            </section>
+            <section class="main-element">
+                <article class="main-sub-element">
+                    <h2>Localização</h2>
+                    <div>
+                        <h3>Endereço</h3>
+                        <p>Estrada Fictícia, 9999, Bairro Imaginário</p>
+                        <p>Cidade - UF - CEP: 00000-000</p>
+                    </div>  
+                    <h3>Mapa da região</h3>
+                    <section class="center">
+                        <iframe src="Recursos/mapa_localizacao.jpg" title="Mapa do Endereço" width="600" height="450"></iframe>
+                    </section>
+                </article>
+            </section>
+            <section class="main-element">
+                <article class="main-sub-element">
+                    <h2>Sugestões e críticas</h2>
+                    <form>
+                        <legend>Envie uma mensagem com sua opinião para nós!</legend><br>
+                        <textarea class="center" name="mensagem" rows="20" cols="75">Escreva aqui.</textarea>
+                    </form>
+                </article>
+            </section>
+        </main>
         <footer class="footer">
             <div>
                 <h3>Endereço</h3>
