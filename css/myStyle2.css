@@ -1,0 +1,231 @@
+/* Ajuste preliminar */
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #3c578e;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 25px;
+    color: gold;
+}
+
+  .menu {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .menu > a {
+    
+    background-color: #669a9f;    
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    align-content: center;
+    padding: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+
+  #current_tab {
+    background-color: #6ac;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+/* Bloco principal */
+.main-container {
+    background-color: #6ac;
+    padding: 25px;
+    color: black;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Sessões */
+.main-element {
+    background-color: azure;
+    width: 66%;
+    border-radius: 22px;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 25px;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Sub-sessões */
+.main-sub-element, h2, h3 {
+    display: flex;
+    width: 66%;
+    flex-flow: column wrap; 
+    padding: 0 0 12px;
+}
+
+/* botão de ver detalhes da sessão*/
+.button {  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.button > a {
+    background-color: #abe2fb;
+    border-radius: 11px;
+    padding: 10px;
+    width: 120px;
+    font-family: 'Times New Roman';
+    color: black;
+    text-align: center;
+    text-decoration: none;    
+}
+
+/* botão de ver detalhes da notícia*/
+.button_typeB {  
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 800px;
+}
+
+.button_typeB > a {
+    background-color: #abe2fb;
+    margin-top: 5px;
+    padding: 5px;
+    width: 120px;
+    font-family: 'Times New Roman';
+    color: black;
+    text-align: center;
+    text-decoration: none;    
+}
+
+/* Container de cartões */
+.cartão_flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Cartões */
+.cartão {
+    background-color: #bde3f9;
+    display: flex;
+    flex-flow: column wrap;
+    width: 25%;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 40px 0 25px 40px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    color: black;
+}
+
+.cartão > h3 {
+    margin-bottom: 20px;
+}
+
+.cartão > p {
+    margin-right: 35px;
+}
+
+/* Botão de exibir detalhes */
+.view_details {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.view_details > a {
+    background-color: #abe2fb;
+    border-radius: 11px;
+    padding: 20px;
+    font-family: 'Times New Roman';
+    color: black;
+    text-decoration: none;    
+}
+
+/* centralizar notícias */
+.center {
+    display: flex;
+    justify-content: center;
+} 
+
+/* Alinhamento de ícones com textos*/
+.icon-text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 15px;
+    font-size: 16pt;
+    color: black;
+    width: 66%;
+}
+
+.icon-text > a {
+    font-family: 'Times New Roman';
+    color: black;
+    text-decoration: none;
+}
+
+/* Formulário */
+
+.form {
+    margin: 15px 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: end;
+}
+
+.fieldset {
+    padding: 25px;
+}
+
+.fieldset > legend {
+    font-weight: bold;
+}
+
+.form > input {
+    font-weight: bold;
+    width: fit-content;
+    border-radius: 4px;
+    margin-left: 20px;
+    padding: 8px;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #3c578e;
+    color: azure;
+    padding: 40px;
+}
+
+/* Conteúdo do rodapé */
+.footer_text {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+}
+
+#copyright {
+    text-align: center;
+}
