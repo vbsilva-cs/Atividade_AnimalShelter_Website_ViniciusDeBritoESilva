@@ -4,10 +4,18 @@
     padding: 0;
 }
 
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;    
+}
+
 /* Cabeçalho */
 .header {
     background-color: #3c578e;
     color: gold;
+    width: 100%;
     padding-top: 30px;
     justify-content: space-between;
     text-align: center;
@@ -278,12 +286,13 @@ h3, h2 {
 /* Rodapé */
 .footer {
     background-color: #3c578e;
+    width: 100%;
     color: azure;
     padding: 40px;
     display: flex;
     flex-flow: row nowrap;    
     gap: 45px;
-    align-items: center;
+    justify-content: space-evenly;
 }
 
 /* Conteúdo do rodapé */
