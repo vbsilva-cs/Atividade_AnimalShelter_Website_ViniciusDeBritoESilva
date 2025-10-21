@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
 }
 
 /* Cabeçalho */
@@ -54,7 +54,6 @@ body {
     font-weight: bold;
     border: 1px solid #3c578e;
     background-color:  #3c578e;
-    width: 80px;
     color: gold;
     text-decoration: none;
     padding: 50px 30px;
@@ -62,41 +61,13 @@ body {
 
 /* destaque da aba referente à página atual */
 #current_tab {
-    border: 1px solid tomato;
+    border: 1px solid gainsboro;
     color: yellow;
-}
-
-@media only screen and (max-width:800px) {
-
-.header {
-    flex-direction: column;
-}
-
-/* menu de navegação */
-.menu {
-    gap: 6px;
-}
-
-/* item do menu */
-.menu > a {
-    background-color: #669a9f;
-    color: black;
-    width: fit-content;
-    padding: 14px 16px 12px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom: #669a9f;
-}
-
-/* destaque da aba referente à página atual */
-#current_tab {
-    background-color: #6ac;
-    color: black;
-    border-style: none;
 }
 
 /* Bloco principal */
 .main-container{
+    width: 100%;
     background-color: #6ac;
     padding: 25px;
     color: black;
@@ -106,7 +77,69 @@ body {
     align-items: center;
 }
 
+
+@media only screen and (max-width:800px) {
+
+.header {
+    flex-direction: column;
 }
+
+/* menu de navegação */
+.menu { 
+    flex-wrap: nowrap;
+}
+/* item do menu */
+.menu > a {
+    background-color: #669a9f;
+    color: black;
+    padding: 14px 16px 12px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: #669a9f;
+}
+
+/* destaque da aba referente à página atual */
+#current_tab {
+    background-color:  #669a9f;
+    color: black;
+    border-style: none;
+}
+.main-container {
+    width: 100%;
+}
+}
+@media only screen and (max-width: 500px) {
+
+
+.menu {
+    background-color:  #3c578e;
+    flex-wrap: wrap-reverse;
+    justify-content: end;
+}
+/* item do menu */
+.menu > a {
+    background-color: #669a9f;
+    border-radius: 0;
+    padding: 5px;
+    color: black;
+    border: 1px double black;
+}
+
+/* destaque da aba referente à página atual */
+#current_tab {
+    background-color: #6ac;
+    border: 1px solid black;
+    color: black;
+}
+
+.main-container {
+    width: 100%;
+}
+}
+
+
+
+
 /* Espaçamento de sub-títulos e conteúdo anterior*/
 h3, h2 {
     margin-top: 10px;
