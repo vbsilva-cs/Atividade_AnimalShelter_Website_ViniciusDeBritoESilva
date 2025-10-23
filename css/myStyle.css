@@ -33,7 +33,6 @@ body {
     justify-content: space-around;
     display: flex;
     flex-wrap: nowrap;
-    gap: 40px;
 }
 
 .header > section {
@@ -65,7 +64,7 @@ body {
     background-color:  #3c578e;
     color: gold;
     text-decoration: none;
-    padding: 50px 30px;
+    padding: 45px 25px;
 }
 
 /* destaque da aba referente à página atual */
@@ -110,33 +109,39 @@ h3, h2 {
 }
 
 /* Capa, primeira sessão */
-#about-content > p, h2 {
-    margin: 0;
-    background-color: rgba(0, 0,0, 0.6);
-    width: 450px;
-    color: white;
-    align-self: flex-end;
-    margin-right: 200px;
-    padding: 20px;
-}
 
-#about-content > h2 {
-    padding-bottom: 30px;
-}
+
 
 
 #about {
-    background-image: url('../Recursos/A split-scene image .png');   
-    background-size: contain;
-    background-position: center;
+    height: 600px;
+    width: auto;
+    background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,00));
+    background-image: url('../Recursos/pixabay_cat-3038243_1280.jpg');   
+    background-position: 100%;
+    background-repeat: no-repeat;
 }
 
 #about-content {
+    background-color: rgba(0, 0,0, 0.8);
+    padding: 20px 40px;
+    margin: 15px;
+    border-radius: 5px;
+    width: 30%;
+    align-self: last baseline;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: end;
     font-size: larger;
+}
+#about-content > p, h2 {
+    width: auto;
+    color: white;
+}
+
+#about-content > nav {
+    align-self: center;
 }
 
 .main-sub-element {
@@ -153,11 +158,13 @@ h3, h2 {
 }
 
 .button > a {
-    background-color: #abe2fb;
+    background-color: #80f78c;
+    font-size: 23px;
     border-radius: 11px;
-    padding: 10px;
+    padding: 12px 42px;
     font-family: 'Times New Roman';
     color: black;
+    font-weight: bold;
     text-align: center;
     text-decoration: none;    
 }
@@ -354,7 +361,7 @@ ul, ol {
 
 
 
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:1024px) {
 
 .header {
     flex-direction: column;
@@ -366,50 +373,36 @@ ul, ol {
 }
 /* item do menu */
 .menu > a {
-    background-color: #669a9f;
-    color: black;
-    padding: 14px 16px 12px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom: #669a9f;
+    padding: 10px 16px 12px;
+    background-color: rgba(0, 0,0, 0.35);
+    border: 1px solid black;
 }
 
-/* destaque da aba referente à página atual */
-#current_tab {
-    background-color:  #669a9f;
-    color: black;
-    border-style: none;
-}
-.main {
-    width: 100%;
-}
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 698px) {
 
 
 .menu {
-    background-color:  #3c578e;
     flex-wrap: wrap-reverse;
     justify-content: end;
 }
 /* item do menu */
 .menu > a {
-    background-color: #669a9f;
-    border-radius: 0;
+    background-color: rgba(0, 0,0, 0.35);
     padding: 5px;
-    color: black;
-    border: 1px double black;
+    border: 1px solid black;
 }
 
 /* destaque da aba referente à página atual */
 #current_tab {
-    background-color: #6ac;
     border: 1px solid black;
-    color: black;
 }
 
 .main {
     width: 100%;
+}
+#about-content {
+    width: auto;
 }
 }
