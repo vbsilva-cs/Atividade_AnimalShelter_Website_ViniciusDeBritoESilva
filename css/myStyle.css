@@ -76,23 +76,17 @@ body {
 /* Bloco principal */
 .main{
     grid-area: main;
-    width: 100%;
-    background-color: azure;
+    width: auto;
     color: black;
     display: flex;
     flex-flow: column wrap;
-    gap: 10px;
-    align-items: center;
-}
-
-/* Espaçamento de sub-títulos e conteúdo anterior*/
-h3, h2 {
-    margin-top: 10px;
+    justify-self: center;
 }
 
 /* Sessões */
 .main-element {
     background-color: azure;
+    padding: 2%;
     display: flex;
     flex-flow: column wrap;
     gap: 10px;
@@ -100,54 +94,68 @@ h3, h2 {
     width: 100%;
 }
 
+.main-element > h2 {
+    background-color: rgba(0, 0,0, 0.4);
+    border-radius: 11px;
+    padding: 10px;
+    margin-bottom: 30px;
+    width: 75%;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+}
+
+h2 > a {
+    text-decoration: none;
+    color: black;
+}
+
 /* Sub-sessões */
-.main-sub-element, h2, h3 {
+.main-sub-element {
     display: flex;
-    flex-flow: column wrap; 
+    flex-flow: column nowrap; 
     padding: 0 0 12px;
-    align-self: start;
+    width: 102%;
 }
 
 /* Capa, primeira sessão */
-
-
-
-
 #about {
-    height: 600px;
-    width: auto;
-    background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,00));
+    height: 1080px;
+    width: 1920px;
     background-image: url('../Recursos/pixabay_cat-3038243_1280.jpg');   
-    background-position: 100%;
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover; 
+    display: block;
+    align-content: center;
 }
 
 #about-content {
     background-color: rgba(0, 0,0, 0.8);
-    padding: 20px 40px;
-    margin: 15px;
     border-radius: 5px;
-    width: 30%;
-    align-self: last baseline;
+    max-width: 498px;
+    height: 324px;
+    padding: 2%;
+    justify-self: end;
+    justify-content: space-around;
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: end;
-    font-size: larger;
-}
-#about-content > p, h2 {
-    width: auto;
+    flex-flow: column nowrap; 
     color: white;
+    align-self: center;
+}
+/* Ajuste da capa em resoluções reduzidas */
+@media only screen and (max-width: 1280px) {
+    #about {
+        background-size: auto;
+    }
+
+    #about-content {
+        align-self: center;
+    }
 }
 
 #about-content > nav {
     align-self: center;
-}
-
-.main-sub-element {
-    background-color: rgba(0, 0,0, 0.35);
-    width: 100%;
-    height: 100%;
 }
 
 /* botão de ver detalhes da sessão*/
@@ -158,7 +166,7 @@ h3, h2 {
 }
 
 .button > a {
-    background-color: #80f78c;
+    background-color: #6ddc78;
     font-size: 23px;
     border-radius: 11px;
     padding: 12px 42px;
@@ -166,45 +174,30 @@ h3, h2 {
     color: black;
     font-weight: bold;
     text-align: center;
-    text-decoration: none;    
-}
-
-/* botão de ver detalhes da notícia*/
-.button_typeB {  
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-}
-
-.button_typeB > a {
-    background-color: #abe2fb;
-    margin-top: 5px;
-    padding: 5px;
-    font-family: 'Times New Roman';
-    color: black;
-    text-align: center;
-    text-decoration: none;    
-}
+    text-decoration: none; 
+} /* Fim da Capa */
 
 /* Container de cartões */
 .cartão_flex {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 25px;
     gap: 10px;
     justify-content: center;
+    width: 100%;
 }
 
 /* Cartões */
 .cartão {
     background-color: #bde3f9;
-    width: 25%;
+    border-radius: 15px;
+    width: 270px;
+    height: 270px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
     gap: 10px;
-    padding: 1.5% 2% 1.5% 3%;
-    margin-bottom: 30px;
-    border-radius: 15px;
+    padding: 3% 2% 1.5% 3%;
     color: black;
 }
 
@@ -227,8 +220,7 @@ h3, h2 {
 
 /* centralizar notícias */
 .center {
-    display: flex;
-    justify-content: center;
+    align-self: center;
 } 
 
 /* Colocar ícones e nomes lado-a-lado */
@@ -334,7 +326,6 @@ h3, h2 {
 .footer {
     grid-area: footer;
     background-color: #3c578e;
-    width: 100%;
     color: azure;
     padding: 40px;
     display: flex;
