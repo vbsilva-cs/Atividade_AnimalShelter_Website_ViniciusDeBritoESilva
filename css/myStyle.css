@@ -112,10 +112,12 @@ h2 > a {
 
 /* Sub-sessões */
 .main-sub-element {
+    background-color: aquamarine;
     display: flex;
     flex-flow: column nowrap; 
-    padding: 0 0 12px;
-    width: 102%;
+    padding: 0 0 12px 48px;
+    width: 60%;
+    align-self: center;    
 }
 
 /* Capa, primeira sessão */
@@ -335,15 +337,28 @@ h2 > a {
 }
 
 /* Conteúdo do rodapé */
+#address {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
 .icon-text > a {
     color: azure;
     margin: 25px;
 }
 
 #social > article {
-    background-color: #000000;
+    background-color: #00000080;
     border-radius: 20px;
     padding: 0 10px 0 10px;
+}
+
+#contato > article{
+    background-color: #00000080;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
 }
 
 ul, ol {
