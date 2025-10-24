@@ -76,7 +76,7 @@ body {
 /* Bloco principal */
 .main{
     grid-area: main;
-    width: auto;
+    width: 75%;
     color: black;
     display: flex;
     flex-flow: column wrap;
@@ -112,7 +112,6 @@ h2 > a {
 
 /* Sub-sessões */
 .main-sub-element {
-    background-color: aquamarine;
     display: flex;
     flex-flow: column nowrap; 
     padding: 0 0 12px 48px;
@@ -125,10 +124,11 @@ h2 > a {
     height: 1080px;
     width: 1920px;
     background-image: url('../Recursos/pixabay_cat-3038243_1280.jpg');   
-    background-position: center;
+    background-position: cover;
     background-repeat: no-repeat;
     background-size: cover; 
     display: block;
+    align-self: center;
     align-content: center;
 }
 
