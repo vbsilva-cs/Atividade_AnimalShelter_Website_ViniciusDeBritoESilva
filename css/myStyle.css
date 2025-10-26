@@ -20,9 +20,10 @@ li { margin-left: 19px; }
 /* Ajuste do corpo de página */
 body {
     background-color: azure;
+    min-height: 100vh;
     color: black;
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:  /* grid escolhido para adiçao de áreas laterais e alterações*/
         "header header"
         "main main"
         "footer footer";
@@ -90,7 +91,7 @@ body {
     gap: 10px;
     padding: 15px;
     color: black;
-}
+} /* Fim cartões */
 
 /* Cabeçalho */
 .header {
@@ -118,16 +119,15 @@ body {
     text-decoration: none;
     color: gold;
     padding: 20px;
-}
+} 
 
-/* menu de navegação */
+/* menu de navegação no cabeçalho */
 .menu {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-evenly;
 }
 
-/* item do menu */
 .menu > a {   
     font-weight: bold;
     border: 1px solid #3c578e;
@@ -137,24 +137,21 @@ body {
     padding: 45px 25px;
 }
 
-/* destaque da aba referente à página atual */
 #current_tab {
     border: 1px solid gainsboro;
     color: yellow;
-}
+}  /* fim cabeçalho */
 
-/* Bloco principal */
+/* Container principal(main) */
 .main{
     grid-area: main;
     color: black;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-self: center;
     min-width: 75%;
     width: 100%;
 }
-
-/* Sessões */
 
 /* Container de elementos em linha(row) */
 .container {
@@ -194,7 +191,6 @@ h2 > a {
     color: black;
 }
 
-/* Sub-sessões */
 .conteudo {
     width: 80%;
     padding: 0 0 12px 48px;  
@@ -300,31 +296,55 @@ h2 > a {
 .foto_galeria {
     width: 100%;
 }    
-}
+} /* Fim Galeria */
 
 /* Formulário */
+.form-sheet {
+    box-shadow: -2px 8px 4px 8px #00000028;
+    margin: 12px 30px;
+    display: flex;
+    flex-flow: column nowrap; 
+    font-size: 19px;
+    padding: 20px 20px 12px;
+    align-items: center;
+    max-width: 1024px;
+}
 
 .form {
-    margin: 15px 20px;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: end;
+    margin-top: 15px ;
 }
 
 .fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.form-group {
     padding: 25px;
 }
 
 .fieldset > legend {
     font-weight: bold;
+    font-size: 23px;
 }
 
-.form > input {
-    font-weight: bold;
-    width: fit-content;
-    border-radius: 4px;
-    margin-left: 20px;
-    padding: 8px;
+.form-group input,
+.form-group textarea,
+.form-group select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 19px;
+    box-sizing: border-box;
+ 
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+    border-color: #c9cccf;
+    outline: none;
 }
 
 /* Rodapé */
@@ -359,4 +379,4 @@ h2 > a {
     color: white;
     text-decoration: none;
     align-items: center;
-}
+} /* fim rodapé */
