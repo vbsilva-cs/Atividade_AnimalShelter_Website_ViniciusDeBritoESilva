@@ -27,9 +27,9 @@
         </header>
 
         <main class="main">
-            <section class="main-element">
+            <section class="container-vertical">
                 <h2>Apoiando a causa</h2>
-                <article class="main-sub-element">
+                <article class="conteudo">
                     <p>Existem muitas maneiras de apoiar causas sociais.</p>
                     <ul>
                         <li>O simples ato de mudar as próprias atitudes no dia-a-dia com um olhar mais empático, seja com os animais ou o próximo, já é uma enorme contribuição</li>
@@ -39,7 +39,7 @@
                     </ul>
                 </article>
 
-                <article class="main-sub-element">
+                <article class="conteudo">
                     <h3>Como a doação de recursos pode ajudar?</h3>
                         <p>Com mais recursos a disposição, a instituição pode:
                     <ul>
@@ -50,7 +50,7 @@
                     </ul>
                 </article>
 
-                <article class="main-sub-element">
+                <article class="conteudo">
                     <h3>Tipos de recursos materiais aceitos:</h3>
                     <ul>
                         <li>materiais de infraestrutura (ex: móveis, equipamentos)</li>
@@ -62,7 +62,7 @@
                     </ul>
                 </article>
 
-                <article class="main-sub-element">
+                <article class="conteudo">
                     <h3>Sobre o uso dos recursos</h3>
                     <ul>
                         <li>compra de novos equipamentos</li>
@@ -72,8 +72,8 @@
                         <li>reserva do recurso e transparência (fundos de reserva e de uso específico)</li>
                     </ul>
                 </article>
-                <div class="cartão_flex" style="gap: 50px;">
-                    <article class="cartão" style="height: 360px;">
+                <div class="container">
+                    <article class="cartão">
                         <h3>Processo de doação ou ajuda de recursos</h3>
                         <ol>
                             <li>Comparecer à Instituição. Para informações acessar a sessão de <a href="contato.html">Contato</a>).</li>
@@ -84,7 +84,7 @@
                         <nav><a class="btn btn-cor1" href="contato.html">Contate-nos</a></nav>
                     </article>
 
-                    <article class="cartão" style="height: 360px;">
+                    <article class="cartão">
                         <h3>Transferência Bancária</h3>
                 
                         <ol>
@@ -99,41 +99,56 @@
             </section>
         </main>
 
-        <footer class="footer">
-
-            <div id="address">
-                <h3>Endereço</h3>
-                <article>
-                    <p>Estrada Fictícia, 9999, Bairro Imaginário</p>
-                    <p>Cidade - UF - CEP: 00000-000</p>
-                    <p>E-mail: atendimento@animal.shelter.com</p> 
-                </article>  
-                <p>Copyright © 2025 - Animal Shelter</p> 
-            </div>                
-            
-            <div id="contato">
-                <h3>Contato</h3>
-                <article class="icon-text">
-                    <img src="Recursos/logo_whatsapp.png" width="60" height="60">
-                    <p>(99) 93210-1234</p>
+      <footer class="footer">
+            <div class="container-vertical">
+                <h3>Social</h3>
+                <div class="container" style="flex-wrap: nowrap;">
+                <article class="container-vertical">
+                    <img src="Recursos/logo_whatsapp.png" width="60" height="60"> 
+                    <a href="contato.html">WhatsApp</a>
                 </article>
-                <article class="icon-text">
-                    <img src="Recursos/symbol_telephone.png" width="60" height="60">
-                    <p>(99) 3210-1234</p>
-                </article>
-            </div>    
-
-            <div id="social"> 
-                <h3>Social</h3>  
-                <article class="icon-text">
+                <article class="container-vertical">
                     <img src="Recursos/logo_instagram.png" width="60" height="60">
                     <a href="contato.html">Instagram</a>
                 </article>
-                <article class="icon-text">
+                <article class="container-vertical">
                     <img src="Recursos/logo_facebook.png" width="60" height="60">
                     <a href="contato.html">Facebook</a>
                 </article>
+            </div>         
+            </div> 
+
+
+            <div class="container" style="flex-wrap: wrap-reverse; gap: 60px; align-items: center;">
+                <article>
+                    <h3>Endereço</h3>
+                    <p>Estrada Fictícia, 9999, Bairro Imaginário</p>
+                    <p>Cidade - UF - CEP: 00000-000</p>
+                    <p>E-mail: atendimento@animal.shelter.com</p> 
+                </article> 
+   
+                <section>
+                    <a id="header-logo"  href="index.html">
+                    <h2>Animal Shelter</h2>
+                    </a>
+                </section>
+                   <article>
+                    <h3>Atendimento</h3>
+                    <p>Celular: (99) 98765-4321</p>
+                    <p>Telefone fixo: (99) 1234-5678</p>
+                </article> 
             </div>
+            <nav class="container-vertical"> 
+                <ul class="footer-menu container">
+                    <li><a href="#">Inicio</a></li>			
+                    <li><a href="#">Licença</a></li>
+                    <li><a href="#">Politica de privacidade</a></li>
+                    <li><a href="#">Politica de cookies</a></li>
+                    <li><a href="#">Trabalhe Conosco</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav> 
+            <p>Copyright © 2025 - Animal Shelter</p>
 		</footer>
     </body>
 </html>

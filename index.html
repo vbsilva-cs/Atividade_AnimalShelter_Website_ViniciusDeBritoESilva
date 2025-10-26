@@ -26,24 +26,25 @@
             </nav>
         </header>
         
-        <main class="main">
+        <main class="main"><div>
             <!-- Capa: primeira sessão da página principal -->
-            <section id="about">
-                <article id="about-content">
+            <section class="fundo-capa">
+                <article class="cartão conteudo-capa">
                     <h2>Sobre</h2>
                     <p>Animal Shelter é uma organização não governamental de ajuda a animais abandonados. Torna-se um lar e abrigo de animais, um ambiente propício para sua recuperação, repleto de cuidados para posterior encontro de um lar definitivo.</p>
                     <p>Antes de comprar um animal considere a prática da adoção, pois estará contribuindo  com a vida, com a oportunidade de conhecer animais formidáveis e incríveis.</p>
                     <nav ><a class="btn btn-cor1" href="projetos.html">Ver detalhes</a></nav>
                 </article>
             </section>
+            </div>
             
-            <section class="main-element">
+            <section class="container-vertical">
                 <h2>Serviços</h2>
-                <article class="main-sub-element">
+                <article class="conteudo">
                     <p>Precisando de um novo amigo? Ou então, necessita deixar a tutela do seu bichinho em bons cuidados com pessoas de confiança?</p>
                     <p>Aqui você encontrará alguns de nossos serviços e como proceder.</p>
                 </article>
-                <div class="cartão_flex">
+                <div class="container">
                     <article class="cartão">
                         <h3>Adoção/Doação</h3>
                         <p>Para realizar uma adoção ou para abrigar um animal doméstico entre em contato conosco através do botão abaixo.</p>
@@ -64,9 +65,9 @@
                 </div>
             </section>
             
-            <section class="main-element">
+            <section class="container-vertical">
                 <h2><a href="noticias.html">Últimas Notícias</a></h2>
-                <article class="main-sub-element, center">  
+                <article class="conteudo, center">  
                     <h3><a href="Conteúdo/2025-10-11_post2.html">Campanha de vacinação antirrábica</a></h3>
                     <p><time datetime="2025-10-11 20:00">11 de outubro de 2025 20:18</time></p>
                     <a href="Conteúdo/2025-10-11_post2.html"><img src="Recursos/imagem_postagem2.png" width="600px" height="350px"></a>
@@ -75,40 +76,55 @@
         </main>
 
         <footer class="footer">
-
-            <div id="address">
-                <h3>Endereço</h3>
-                <article>
-                    <p>Estrada Fictícia, 9999, Bairro Imaginário</p>
-                    <p>Cidade - UF - CEP: 00000-000</p>
-                    <p>E-mail: atendimento@animal.shelter.com</p> 
-                </article>  
-                <p>Copyright © 2025 - Animal Shelter</p> 
-            </div>                
-            
-            <div id="contato">
-                <h3>Contato</h3>
-                <article class="icon-text">
-                    <img src="Recursos/logo_whatsapp.png" width="60" height="60">
-                    <p>(99) 93210-1234</p>
+            <div class="container-vertical">
+                <h3>Social</h3>
+                <div class="container" style="flex-wrap: nowrap;">
+                <article class="container-vertical">
+                    <img src="Recursos/logo_whatsapp.png" width="60" height="60"> 
+                    <a href="contato.html">WhatsApp</a>
                 </article>
-                <article class="icon-text">
-                    <img src="Recursos/symbol_telephone.png" width="60" height="60">
-                    <p>(99) 3210-1234</p>
-                </article>
-            </div>    
-
-            <div id="social"> 
-                <h3>Social</h3>  
-                <article class="icon-text">
+                <article class="container-vertical">
                     <img src="Recursos/logo_instagram.png" width="60" height="60">
                     <a href="contato.html">Instagram</a>
                 </article>
-                <article class="icon-text">
+                <article class="container-vertical">
                     <img src="Recursos/logo_facebook.png" width="60" height="60">
                     <a href="contato.html">Facebook</a>
                 </article>
+            </div>         
+            </div> 
+
+
+            <div class="container" style="flex-wrap: wrap-reverse; gap: 60px; align-items: center;">
+                <article>
+                    <h3>Endereço</h3>
+                    <p>Estrada Fictícia, 9999, Bairro Imaginário</p>
+                    <p>Cidade - UF - CEP: 00000-000</p>
+                    <p>E-mail: atendimento@animal.shelter.com</p> 
+                </article> 
+   
+                <section>
+                    <a id="header-logo"  href="index.html">
+                    <h2>Animal Shelter</h2>
+                    </a>
+                </section>
+                   <article>
+                    <h3>Atendimento</h3>
+                    <p>Celular: (99) 98765-4321</p>
+                    <p>Telefone fixo: (99) 1234-5678</p>
+                </article> 
             </div>
+            <nav class="container-vertical"> 
+                <ul class="footer-menu container">
+                    <li><a href="#">Inicio</a></li>			
+                    <li><a href="#">Licença</a></li>
+                    <li><a href="#">Politica de privacidade</a></li>
+                    <li><a href="#">Politica de cookies</a></li>
+                    <li><a href="#">Trabalhe Conosco</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav> 
+            <p>Copyright © 2025 - Animal Shelter</p>
 		</footer>
     </body>
 </html>
